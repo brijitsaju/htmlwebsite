@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home"><i class="fa-sharp fa-solid fa-phone fa-shake"></i>  565 754 8870/ 01 8137811</a></li>
+            <li><a href="#about"><i class="fa-sharp fa-solid fa-message fa-shake"></i>  contact@sample.ie</a></li>
+            <li><a href="#services"><i class="fa-sharp fa-solid fa-clock fa-shake"></i>  Mon-Thu:8:00 am to 9:00 pm</a></li>
+            
+        </ul>
+        <ul class="social-list">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </nav>
+    <nav class="navbar2">
+        <div class="logo">
+            <img src="logo.avif" alt="Logo">
+        </div>
+        <div class="menu-toggle2" id="mobile">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav2">
+            <li ><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Order Company</a></li>
+            <li><a href="#contact">Apply for Tax Rebate</a></li>
+            <li><a href="#contact">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content-left">
+            <h1 class="head">Take The Right Step <br> For Your Business</h1>
+            <p class="para" >TAx Associate is a leading consultancy firm that provides <br> simple,effective company registration, and accounting <br> solutions to enterprises in Ireland</p>
+            <button class="get-started-btn" type="submit" >
+                Get Started 
+            </button>
+        </div>
+        <div class="content-right">
+            <form class="login-form">
+                <h2>Apply for Tax Rebate Now</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pps-number">PPS Number</label>
+                    <input type="text" id="pps-number" name="pps-number" required>
+                </div>
+                <div class="form-group">
+                   
+                    <label for="terms">
+                        <i class="fas fa-check"></i> I have read & agreed to the authorisation and the 
+                        <a href="#" target="_blank">terms & conditions</a>
+                    </label>
+                </div>
+                <button type="submit">
+                    Apply <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="three-column-container">
+        <div class="column">
+            <i class="fas fa-home icon"></i>
+            <h3 class="heading">Start Up Services</h3>
+            <p>We support enterpreneurs to bulid their business by providing them with the ideal company formation legal services</p>
+        </div>
+        <div class="column">
+            <i class="fas fa-user icon"></i>
+            <h3 class="heading">Finance & Accounting</h3>
+            <p>We provide our clients with the best in the market, accountng and financial services to help accellerate their business growth </p>
+        </div>
+        <div class="column">
+            <i class="fas fa-cogs icon"></i>
+            <h3 class="heading">Risk & Assurance</h3>
+            <p>We offer risk and assurance servicesfor new as well as established business to help them reduce risks and overcome any disruption</p>
+        </div>
+    </div>
+
+    <script>
+        const mobile = document.getElementById('mobile-menu');
+        const nav2 = document.querySelector('.nav-list');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav2.classList.toggle('active');
+        });
+    </script>
+
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+        
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+
+    
+</body>
+</html>
